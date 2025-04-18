@@ -3,132 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>John Doe - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/277a042b20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- header -->
-    <header>
-        <nav>
-            <h1 class="site-title">John Doe</h1>
-            <ul>
-                <li><a href="#top">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills-projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- end header -->
-
-    <!-- about me section -->
-    <div class="content-wrapper">
-        <main>
-            <section class="about" id="about">
-                <img src="images/profile.png" alt="Profile Picture" class="profile-img">
-                <div class="about-content">
-                    <h2>About Me</h2>
-                    <p>I am a web developer with experience in building responsive websites and web applications.</p>
-                </div>
-            </section>
-    <!-- about me section end-->
-
-            <!-- skills & projects section -->
-            <section class="skills-projects" id="skills-projects">
-                <h2>Skills & Projects</h2>
-                <div class="skills-list">
-                    <h3>Skills:</h3>
+    <div class="portfolio-container">
+        <header>
+            <div class="header-content">
+                <h1>John Doe</h1>
+                <nav>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
-                </div>
-                <table class="projects-table">
-                    <tr>
-                        <th>Project</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Portfolio Website</td>
-                        <td>A personal portfolio site</td>
-                    </tr>
-                    <tr>
-                        <td>E-commerce Site</td>
-                        <td>An online store for products</td>
-                    </tr>
-                </table>
-            </section>
-            <!-- end skills & projects section -->
+                </nav>
+            </div>
+        </header>
 
-            <!-- media section -->
-            <section class="media">
-                <h2>Media</h2>
-                <div>
-                    <h3>Sample Video</h3>
-                    <video controls width="100%">
-                        <source src="media/sample.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div>
-                    <h3>Sample Audio</h3>
-                    <audio controls>
-                        <source src="media/sample.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-            </section>
-        </main>
-        <!-- end media section -->
+        <div class="about-section" id="about">
+            <div class="profile-image">
+                <img src="images/profile.png" alt="John Doe">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I am a web developer with experience in building responsive websites and web applications.</p>
+            </div>
+        </div>
 
-        <!-- sidebar -->
-        <aside class="sidebar">
-            <div class="more-info">
-                <h2>More Info</h2>
-                <p>This is a sample quote from me.</p>
-                <p>John Doe</p>
+        <div class="main-content">
+            <div class="left-column">
+                <section class="skills-projects" id="projects">
+                    <h2>Skills & Projects</h2>
+                    <div class="skills">
+                        <h3>Skills:</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="projects">
+                        <table>
+                            <tr>
+                                <th>Project</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>Portfolio Website</td>
+                                <td>A personal portfolio site</td>
+                            </tr>
+                            <tr>
+                                <td>E-commerce Site</td>
+                                <td>An online store for products</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="media-section">
+                    <h2>Media</h2>
+                    <div class="video-container">
+                        <video controls>
+                            <source src="video and audio/sample-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>Sample Video</p>
+                    </div>
+                    <div class="audio-container">
+                        <audio controls>
+                            <source src="video and audio/sample-video.mp3" type="audio/mpeg">
+                            Your browser does not support the audio tag.
+                        </audio>
+                        <p>Sample Audio</p>
+                    </div>
+                </section>
             </div>
 
-            <div class="contact-form" id="contact">
-                <h2>Contact Form</h2>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <select id="message" name="message">
-                            <option value="general">General Inquiry</option>
-                            <option value="project">Project Proposal</option>
-                            <option value="feedback">Feedback</option>
-                        </select>
-                    </div>
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="newsletter" name="newsletter">
-                        <label for="newsletter">Subscribe to newsletter</label>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
+            <div class="right-column">
+                <div class="more-info">
+                    <h2>More Info <span class="chevron">›</span></h2>
+                    <p>This is a sample quote from me.</p>
+                    <p>John Doe</p>
+                </div>
+
+                <div class="contact-form" id="contact">
+                    <h2>Contact Form</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <select id="message" name="message">
+                                <option value="general">General Inquiry</option>
+                                <option value="project">Project Proposal</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to newsletter</label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
-        </aside>
-        <!-- end sidebar -->
+        </div>
+
+        <footer>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> Linidin</a>
+            </div>
+            <div class="copyright">
+                <p>© 2024 John Doe</p>
+            </div>
+        </footer>
     </div>
-
     <!-- end content wrapper -->
 
-    <!-- footer section -->
-    <footer>
-        <div class="social-links">
-            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-        </div>
-        <p>&copy; 2024 John Doe</p>
-    </footer>
-    <!-- end footer section -->
 </body>
 </html>
