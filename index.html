@@ -25,46 +25,57 @@
         </header>
 
         <div class="about-section" id="about">
-            <div class="profile-image">
-                <img src="images/profile.png" alt="John Doe">
-            </div>
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>I am a web developer with experience in building responsive websites and web applications.</p>
+            <div class="about-border">
+                <div class="about-content-wrapper">
+                    <div class="profile-image">
+                        <img src="images/profile.png" alt="John Doe">
+                    </div>
+                
+                    <div class="vl"></div>
+
+                    <div class="about-content">
+                        <h2>About Me</h2>
+                        <p>I am a web developer with experience in building responsive websites and web applications.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="main-content">
             <div class="left-column">
                 <section class="skills-projects" id="projects">
-                    <h2>Skills & Projects</h2>
-                    <div class="skills">
-                        <h3>Skills:</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="projects">
-                        <table>
-                            <tr>
-                                <th>Project</th>
-                                <th>Description</th>
-                            </tr>
-                            <tr>
-                                <td>Portfolio Website</td>
-                                <td>A personal portfolio site</td>
-                            </tr>
-                            <tr>
-                                <td>E-commerce Site</td>
-                                <td>An online store for products</td>
-                            </tr>
-                        </table>
+                    <div class="skills-border">
+                        <h2>Skills & Projects</h2>
+                        <div class="skills-content">
+                            <div class="left-skills">
+                                <h3>Skills:</h3>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="right-skills">
+                                <table>
+                                    <tr>
+                                        <th>Project</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Portfolio Website</td>
+                                        <td>A personal portfolio site</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-commerce Site</td>
+                                        <td>An online store for products</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </section>
-
-                <section class="media-section">
+                
+                <div class="media-border">
                     <h2>Media</h2>
                     <div class="video-container">
                         <video controls>
@@ -80,17 +91,21 @@
                         </audio>
                         <p>Sample Audio</p>
                     </div>
-                </section>
+                </div>
             </div>
 
-            <div class="right-column">
+            <div class="right-column"> 
                 <div class="more-info">
-                    <h2>More Info <span class="chevron">›</span></h2>
-                    <p>This is a sample quote from me.</p>
-                    <p>John Doe</p>
+                    <div class="more-info-border">
+                        <h2>More Info <span class="chevron">›</span></h2>
+                        <!-- <hr class="divider"> -->
+                        <p>This is a sample quote from me.</p>
+                        <p>John Doe</p>
+                    </div>
                 </div>
-
+                
                 <div class="contact-form" id="contact">
+                    <div class="contact-border">
                     <h2>Contact Form</h2>
                     <form action="#" method="POST">
                         <div class="form-group">
@@ -116,6 +131,7 @@
                         <button type="submit">Submit</button>
                     </form>
                 </div>
+            </div>
             </div>
         </div>
 
