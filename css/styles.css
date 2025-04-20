@@ -46,6 +46,14 @@ nav ul {
     gap: 30px;
 }
 
+.list-item {
+    padding-left: 0;  /* remove existing left padding */
+    padding-right: 5px;  /* add right padding */
+    display: list-item;
+    margin-left: 20px;  /* add left margin to move bullet points */
+    list-style-position: outside;  /* ensure bullet points are outside */
+}
+
 nav a {
     text-decoration: none;
     color: #000;
@@ -67,6 +75,7 @@ nav a {
     display: flex;
     align-items: stretch;
     gap: 20px;
+    position: relative;
 }
 
 .profile-image {
@@ -84,7 +93,7 @@ nav a {
 .vl {
     width: 3px;
     background-color: #1a2b42;
-    margin: 0 10px;
+    align-self: stretch; 
     height: auto;
 }
 
@@ -97,6 +106,7 @@ nav a {
     color: #1a2b42;
     font-size: 1.8rem;
     margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 /* Main content layout */
@@ -116,10 +126,9 @@ nav a {
 
 /* Skills & Projects section */
 .skills-projects {
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    /* border-bottom: 2px solid #1a2b42; */
+    padding-bottom: 15px;  /* decreased from 20px */
+    padding-left: 15px;    /* decreased from 20px */
+    padding-top: 5px;      /* decreased from 10px */
 }
 
 .skills-heading {
@@ -131,16 +140,18 @@ nav a {
 
 .skills-border {
     border: 2px solid #1a2b42;
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 20px;
+    border-radius: 12px;   /* decreased from 16px */
+    padding: 15px;         /* decreased from 20px */
+    margin-bottom: 15px;   /* decreased from 20px */
+    width: 90%;           /* added to reduce overall width */
+    margin-left: auto;    /* center the box */
+    margin-right: auto;   /* center the box */
 }
 
 .skills-border h2 {
     color: #1a2b42;
     font-size: 1.8rem;
     margin-bottom: 20px;
-    border-bottom: 2px solid #1a2b42;
     padding-bottom: 10px;
 }
 
@@ -174,9 +185,10 @@ nav a {
 }
 
 table {
-    width: 100%;
+    width: 390px;
     border-collapse: collapse;
     margin-top: 10px;
+    padding-right: 15px;
 }
 
 table th, table td {
@@ -202,26 +214,32 @@ table th {
 
 .video-container, .audio-container {
     margin-bottom: 20px;
+    padding-top: 10px;
 }
 
 .media-border {
     border: 2px solid #1a2b42;
-    border-radius: 16px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    
+    border-radius: 12px;    /* decreased from 16px */
+    padding-top: 15px;      /* decreased from 25px */
+    padding-bottom: 20px;   /* decreased from 25px */
+    padding-left: 15px;     /* decreased from 20px */
+    padding-right: 15px;    /* decreased from 20px */
+    width: 90%;            /* added to reduce overall width */
+    margin-left: auto;     /* center the box */
+    margin-right: auto;    /* center the box */
 }
 
+/* Adjust the video and audio size to fit the smaller container */
 video, audio {
-    width: 100%;
+    width: 90%;           /* decreased from 80% */
     margin-bottom: 5px;
 }
 
 hr {
     border-top: 3px solid #1a2b42;
     margin: 20px 0;
+    width: 100%;         /* Add this to make HR full width */
+    display: block;      /* Add this to ensure block-level display */
 }
 
 /* Right column sections */
@@ -250,7 +268,6 @@ hr {
     color: #1a2b42;
     font-size: 1.5rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid #1a2b42;
     padding-bottom: 10px;
 }
 
@@ -306,7 +323,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    border-top: 2px solid #1a2b42;
+    /* border-top: 2px solid #1a2b42; */
 }
 
 .social-links a {
@@ -365,4 +382,30 @@ footer {
         padding-left: 0;
         margin-top: 20px;
     }
+}
+
+.skills-border, .media-border, .more-info-border, .contact-border {
+    padding: 20px;
+    position: relative;    
+}
+
+.skills-border hr, 
+.media-border hr, 
+.more-info-border hr, 
+.contact-border hr {
+    margin-left: -20px;   
+    margin-right: -20px;  
+    width: calc(100% + 40px); 
+}
+
+.footer-hr
+{
+    margin-left: -20px;   
+    margin-right: -20px;  
+    width: calc(100% + 50px); 
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    position: relative;
 }
